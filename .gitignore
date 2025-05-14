@@ -1,0 +1,46 @@
+# WordPress core files
+/wp-admin/
+/wp-includes/
+/wp-content/plugins/
+/wp-content/themes/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backups/
+
+# Ignorer les uploads d'images et autres fichiers générés
+wp-content/uploads/
+
+# Ignorer les fichiers temporaires ou générés
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backups/
+
+# Ignore les fichiers générés lors de l'installation
+*.log
+*.swp
+*.bak
+*.tmp
+*.gzip
+*.zip
+
+# Ignore les fichiers WordPress de base
+wp-config.php
+wp-config-sample.php
+.htaccess
+php.ini
+
+# Ignore les dossiers de plugins spécifiques ou personnalisés
+wp-content/plugins/*/node_modules
+wp-content/plugins/*/bower_components
+
+# Ignore les fichiers de configuration de l'environnement de développement
+/.idea/
+/.vscode/
+/node_modules/
+/dist/
+/build/
+/.DS_Store
+
+# Ignore les fichiers générés par des outils de CI/CD
+/.github/
+/.gitlab-ci.yml
