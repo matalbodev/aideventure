@@ -1,46 +1,27 @@
-# WordPress core files
-/wordpress/wp-admin/
-/wordpress/wp-includes/
-/wordpress/wp-content/plugins/
-/wordpress/wp-content/themes/
-/wordpress/wp-content/upgrade/
+# Ignore tout le contenu du dossier WordPress
+/wordpress/*
+
+# Garde les fichiers de configuration, comme entrypoint.sh
+!/wordpress/.gitkeep
+!/wordpress/entrypoint.sh
+!/wordpress/wp-config.php
+
+# Garde wp-content et ses sous-dossiers
+!/wordpress/wp-content/
+!/wordpress/wp-content/themes/
+!/wordpress/wp-content/plugins/
+
+# Ignore les uploads (dossier de contenu dynamique)
+wordpress/wp-content/uploads/
+
+# Ignore les autres caches et logs
 /wordpress/wp-content/cache/
+/wordpress/wp-content/upgrade/
 /wordpress/wp-content/backups/
+/wordpress/wp-content/languages/
 
-# Ignorer les uploads d'images et autres fichiers générés
-wp-content/uploads/
+# Si tu veux ignorer les logs et tmp (pour éviter les fichiers temporaires)
+wordpress/wp-content/*.log
+wordpress/wp-content/tmp/
 
-# Ignorer les fichiers temporaires ou générés
-wp-content/upgrade/
-wp-content/cache/
-wp-content/backups/
-
-# Ignore les fichiers générés lors de l'installation
-*.log
-*.swp
-*.bak
-*.tmp
-*.gzip
-*.zip
-
-# Ignore les fichiers WordPress de base
-wp-config.php
-wp-config-sample.php
-.htaccess
-php.ini
-
-# Ignore les dossiers de plugins spécifiques ou personnalisés
-wp-content/plugins/*/node_modules
-wp-content/plugins/*/bower_components
-
-# Ignore les fichiers de configuration de l'environnement de développement
-/.idea/
-/.vscode/
-/node_modules/
-/dist/
-/build/
-/.DS_Store
-
-# Ignore les fichiers générés par des outils de CI/CD
-/.github/
-/.gitlab-ci.yml
+.env
