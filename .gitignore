@@ -1,11 +1,11 @@
 # WordPress core files
-/wp-admin/
-/wp-includes/
-/wp-content/plugins/
-/wp-content/themes/
-/wp-content/upgrade/
-/wp-content/cache/
-/wp-content/backups/
+/wordpress/wp-admin/
+/wordpress/wp-includes/
+/wordpress/wp-content/plugins/
+/wordpress/wp-content/themes/
+/wordpress/wp-content/upgrade/
+/wordpress/wp-content/cache/
+/wordpress/wp-content/backups/
 
 # Ignorer les uploads d'images et autres fichiers générés
 wp-content/uploads/
