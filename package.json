@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm --prefix ./webapp run dev"
+    "dev:webapp": "npm --prefix ./webapp run dev",
+    "build:webapp": "npm --prefix ./webapp run build",
+    "dev:gemini-writer": "npm --prefix ./gemini-writer run dev",
+    "build:gemini-writer": "npm --prefix ./gemini-writer run build"
   },
   "author": "Mathieu Alboré",
   "license": "ISC"
