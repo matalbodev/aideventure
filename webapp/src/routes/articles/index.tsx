@@ -3,7 +3,6 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 
 import { postsQueryOptions } from "~/features/posts/queries";
 import PostsList from "~/features/posts/components/PostsList";
-import { InfiniteData } from "@tanstack/query-core";
 
 export const Route = createFileRoute("/articles/")({
   component: PostsIndexComponent,

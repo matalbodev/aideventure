@@ -28,6 +28,7 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "autoprefixer": "^10.4.20",
+    "daisyui": "^5.0.35",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-import": "^2.31.0",
