@@ -25,3 +25,4 @@ wordpress/wp-content/*.log
 wordpress/wp-content/tmp/
 
 .env
+.idea
