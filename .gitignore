@@ -9,8 +9,7 @@
 # Garde wp-content et ses sous-dossiers
 !/wordpress/wp-content/
 !/wordpress/wp-content/themes/
-!/wordpress/wp-content/plugins/gemini-writer
-!/wordpress/wp-content/plugins/wp-headless-mode
+!/wordpress/wp-content/plugins/
 
 # Ignore les uploads (dossier de contenu dynamique)
 wordpress/wp-content/uploads/
@@ -26,4 +25,3 @@ wordpress/wp-content/*.log
 wordpress/wp-content/tmp/
 
 .env
-.idea
