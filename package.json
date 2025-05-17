@@ -7,13 +7,5 @@
     "dev": "npm --prefix ./webapp run dev"
   },
   "author": "Mathieu Alboré",
-  "license": "ISC",
-  "devDependencies": {
-    "daisyui": "^5.0.35"
-  },
-  "dependencies": {
-    "@tailwindcss/postcss": "^4.1.6",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.6"
-  }
+  "license": "ISC"
 }
