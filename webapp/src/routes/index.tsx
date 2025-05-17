@@ -1,13 +1,17 @@
-import { createFileRoute } from '@tanstack/react-router'
+import {createFileRoute} from '@tanstack/react-router'
+import {postsQueryOptions} from "~/features/posts/queries";
 
 export const Route = createFileRoute('/')({
-  component: Home,
+    loader: async ({context}) => {
+        await context.queryClient.ensureQueryData(postsQueryOptions())
+    },
+    component: Home,
 })
 
 function Home() {
-  return (
-    <div className="p-2">
-      <h3>Welcome Home!!!</h3>
-    </div>
-  )
+    return (
+        <div className="py-8">
+            <h3>Welcome Home!!!</h3>
+        </div>
+    )
 }
